@@ -1,0 +1,14 @@
+# ============================================
+# GitHub repo (didhd/bedrock-model-catalog-api-v2) is PUBLIC.
+# ONLY skills/ and README.md are allowed on GitHub.
+# Everything else is blocked.
+# ============================================
+
+# Block everything by default
+/*
+
+# Allow ONLY these paths
+!README.md
+!skills/
+!skills/**
+!.gitignore
