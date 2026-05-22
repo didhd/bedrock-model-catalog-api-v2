@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "bedrock-model-lookup": {
+      "source": "didhd/bedrock-model-catalog-api-v2",
+      "sourceType": "github",
+      "computedHash": "7faeaafc42ef244af00429c4e2279f8ceb1ed19df9ca511a0e42e65ad3bc0ae6"
+    }
+  }
+}

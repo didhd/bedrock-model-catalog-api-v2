@@ -1,14 +1,53 @@
 # ============================================
 # GitHub repo (didhd/bedrock-model-catalog-api-v2) is PUBLIC.
-# ONLY skills/ and README.md are allowed on GitHub.
-# Everything else is blocked.
+# Allow source code, block build artifacts and secrets.
 # ============================================
 
 # Block everything by default
 /*
 
-# Allow ONLY these paths
+# Allow source/docs
 !README.md
+!SPEC.md
+!.gitignore
+!.github/
+!.github/**
+!docs/
+!docs/**
 !skills/
 !skills/**
-!.gitignore
+!skills-lock.json
+
+# Allow Lambda source
+!lambda/
+lambda/*
+!lambda/handler.py
+!lambda/requirements.txt
+!lambda/fallback_metadata.json
+!lambda/fallback_pricing.json
+
+# Allow local collector
+!local_collect.py
+
+# Allow Terraform source (BUT block state and vars)
+!terraform/
+terraform/*
+!terraform/*.tf
+!terraform/terraform.tfvars.example
+
+# Frontend excluded (managed in separate repo)
+
+# Always block secrets and build artifacts (defense in depth)
+**/.env
+**/.env.*
+**/__pycache__
+**/.DS_Store
+**/node_modules
+**/dist
+**/lambda.zip
+**/layer.zip
+**/package/
+**/*.tfstate
+**/*.tfstate.*
+**/*.tfvars
+**/tfplan

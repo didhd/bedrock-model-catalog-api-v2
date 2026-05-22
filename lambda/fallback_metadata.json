@@ -1,0 +1,619 @@
+{
+  "anthropic.claude-3-7-sonnet-20250219-v1:0": {
+    "modelAttributes": "Text generation, Code generation, Rich text formatting, Agentic computer use",
+    "fullDescription": "Claude 3.7 Sonnet is Anthropic's most intelligent model to date and the first Claude model to offer extended thinking—the ability to solve complex problems with careful, step-by-step reasoning.",
+    "supportedUseCases": "RAG or search & retrieval over vast amounts of knowledge, product recommendations, forecasting, targeted marketing, code generation, quality control, parse text from images, agentic computer use, content generation",
+    "supportedLanguages": "English, Spanish, Japanese, and multiple other languages",
+    "maxContextWindow": "200k",
+    "releaseDate": "2025-02-19T08:00:00Z"
+  },
+  "anthropic.claude-3-5-sonnet-20241022-v2:0": {
+    "modelAttributes": "Agents, Chat optimized, Code generation, Complex reasoning analysis, Conversation, Image-to-text, Math, Multilingual support, Natural language processing, Question answering, RAG, Text generation, Text summarization, Text-to-text, Translation",
+    "fullDescription": "The upgraded Claude 3.5 Sonnet is now state-of-the-art for a variety of tasks including coding, with improvements across the board.",
+    "supportedUseCases": "RAG, code generation, complex reasoning, content generation, agentic computer use",
+    "supportedLanguages": "English, Spanish, Japanese, and multiple other languages",
+    "maxContextWindow": "200k",
+    "releaseDate": "2024-10-22T00:00:00Z"
+  },
+  "anthropic.claude-3-5-sonnet-20240620-v1:0": {
+    "modelAttributes": "Agents, Chat optimized, Code generation, Complex reasoning analysis, Conversation, Image-to-text, Math, Multilingual support, Natural language processing, Question answering, RAG, Text generation, Text summarization, Text-to-text, Translation",
+    "fullDescription": "Claude 3.5 Sonnet raises the industry bar for intelligence, outperforming competitor models and Claude 3 Opus, at the speed and cost of a mid-tier model.",
+    "supportedUseCases": "RAG, code generation, complex reasoning, content generation",
+    "supportedLanguages": "English, Spanish, Japanese, and multiple other languages",
+    "maxContextWindow": "200k",
+    "releaseDate": "2024-06-20T00:00:00Z"
+  },
+  "anthropic.claude-3-5-haiku-20241022-v1:0": {
+    "modelAttributes": "Agents, Chat optimized, Code generation, Complex reasoning analysis, Conversation, Math, Multilingual support, Question answering, RAG, Text generation, Text summarization, Text-to-text, Translation",
+    "fullDescription": "Claude 3.5 Haiku, Anthropic's fastest and most cost-effective model, excels at understanding user queries and providing quick, accurate responses.",
+    "supportedUseCases": "RAG, code generation, chat, content generation",
+    "supportedLanguages": "English, Spanish, Japanese, and multiple other languages",
+    "maxContextWindow": "200K",
+    "releaseDate": "2024-10-22T00:00:00Z",
+    "maxOutputTokens": 8192
+  },
+  "anthropic.claude-3-haiku-20240307-v1:0": {
+    "modelAttributes": "Image to text, conversation, chat optimized",
+    "fullDescription": "Claude 3 Haiku is Anthropic's fastest, most compact model for near-instant responsiveness. It answers simple queries and requests with speed.",
+    "supportedLanguages": "English and multiple other languages",
+    "maxContextWindow": "200K",
+    "releaseDate": "2024-03-07T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "anthropic.claude-3-sonnet-20240229-v1:0": {
+    "modelAttributes": "Image to text & code, multilingual conversation, complex reasoning & analysis",
+    "fullDescription": "Claude 3 Sonnet by Anthropic strikes the ideal balance between intelligence and speed—particularly for enterprise workloads.",
+    "supportedUseCases": "RAG, code generation, complex reasoning, content generation",
+    "supportedLanguages": "English and multiple other languages",
+    "maxContextWindow": "200k",
+    "releaseDate": "2024-03-04T08:00:00Z"
+  },
+  "anthropic.claude-opus-4-20250514-v1:0": {
+    "modelAttributes": "Hybrid reasoning, extended thinking, code generation, agentic workflows, complex analysis, tool use",
+    "fullDescription": "Claude Opus 4 is Anthropic's most powerful model, designed for the most complex tasks requiring deep reasoning, extended thinking, and sophisticated analysis.",
+    "supportedLanguages": "English, Spanish, Japanese, and multiple other languages",
+    "maxContextWindow": "200k",
+    "releaseDate": "2025-05-14T00:00:00Z"
+  },
+  "meta.llama4-maverick-17b-instruct-v1:0": {
+    "modelAttributes": "Fine Tuning, Text summarization, Code generation, Function calling, Advanced understanding, Assistants, Chatbots",
+    "fullDescription": "Our newest models include smaller and larger options to accommodate a range of use cases and developers.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai, and other languages",
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 8192,
+    "releaseDate": "2025-04-05T00:00:00Z"
+  },
+  "meta.llama4-scout-17b-instruct-v1:0": {
+    "modelAttributes": "Fine Tuning, Text summarization, Code generation, Function calling, Advanced understanding, Assistants, Chatbots",
+    "fullDescription": "Our smaller model, Llama 4 Scout, is a general purpose model with 17 billion active parameters, 16 experts, and a 10M token context window.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai, and other languages",
+    "maxContextWindow": "10M",
+    "maxOutputTokens": 8192,
+    "releaseDate": "2025-04-05T00:00:00Z"
+  },
+  "meta.llama3-3-70b-instruct-v1:0": {
+    "modelAttributes": "Tool Use, Code Generation, Advanced reasoning and decision making, Steerability",
+    "fullDescription": "With Llama 3, we set out to build the best open models that are on par with the best proprietary models available today.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 4096,
+    "releaseDate": "2024-12-06T00:00:00Z"
+  },
+  "meta.llama3-2-11b-instruct-v1:0": {
+    "modelAttributes": "Chat optimized, Code generation, Complex reasoning analysis, Conversation, Document summarization, Image-to-text, Math, Multilingual support, Natural language processing, Object detection, Question answering, RAG, Rich text formatting, Sentence similarity, Text classification, Text generation, Text summarization, Text-to-image, Token classification, Translation",
+    "fullDescription": "The Llama 3.2 11B Vision Instruct model is a multimodal, fine-tuned model, leveraging 11 billion parameters for image reasoning and visual understanding.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "releaseDate": "2024-09-25T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "meta.llama3-2-1b-instruct-v1:0": {
+    "modelAttributes": "Agents, Chat optimized, Code generation, Complex reasoning analysis, Conversation, Document summarization, Math, Multilingual support, Natural language processing, On-device processing, Question answering, RAG, Rich text formatting, Sentence similarity, Text classification, Text generation, Text summarization, Text-to-text, Token classification, Translation",
+    "fullDescription": "The Llama 3.2 1B Instruct model is a lightweight, fine-tuned model that delivers efficient and private text generation.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "releaseDate": "2024-09-25T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "meta.llama3-2-3b-instruct-v1:0": {
+    "modelAttributes": "Agents, Chat optimized, Code generation, Complex reasoning analysis, Conversation, Document summarization, Math, Multilingual support, Natural language processing, On-device processing, Question answering, RAG, Rich text formatting, Sentence similarity, Text classification, Text generation, Text summarization, Text-to-text, Token classification, Translation",
+    "fullDescription": "The Llama 3.2 3B Instruct model is a lightweight, fine-tuned model, leveraging 3 billion parameters for efficient text generation.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "releaseDate": "2024-09-25T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "meta.llama3-2-90b-instruct-v1:0": {
+    "modelAttributes": "Chat optimized, Code generation, Complex reasoning analysis, Conversation, Document summarization, Image-to-text, Math, Multilingual support, Natural language processing, Object detection, Question answering, RAG, Rich text formatting, Sentence similarity, Text classification, Text generation, Text summarization, Text-to-image, Token classification, Translation",
+    "fullDescription": "The Llama 3.2 90B Vision Instruct model is a multimodal, fine-tuned model, leveraging 90 billion parameters for advanced image reasoning and visual understanding.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "releaseDate": "2024-09-25T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "meta.llama3-1-405b-instruct-v1:0": {
+    "modelAttributes": "Ability to follow instructions and tasks, improved reasoning and understanding of nuances and context, and multilingual translation",
+    "fullDescription": "Meta Llama 3.1 405B Instruct is the largest and most powerful of the Llama 3.1 Instruct models.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "releaseDate": "2024-07-23T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "meta.llama3-1-70b-instruct-v1:0": {
+    "modelAttributes": "Ability to follow instructions and tasks, improved reasoning and understanding of nuances and context, and multilingual translation",
+    "fullDescription": "An update to Meta Llama 3 70B Instruct that includes an expanded 128K context length, multilinguality, and improved reasoning capabilities.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "releaseDate": "2024-07-23T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "meta.llama3-1-8b-instruct-v1:0": {
+    "modelAttributes": "Ability to follow instructions and tasks, improved reasoning and understanding of nuances and context, and multilingual translation",
+    "fullDescription": "An update to Meta Llama 3 8B Instruct that includes an expanded 128K context length, multilinguality, and improved reasoning capabilities.",
+    "supportedLanguages": "English, German, French, Italian, Portuguese, Hindi, Spanish, Thai",
+    "maxContextWindow": "128K",
+    "releaseDate": "2024-07-23T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "meta.llama3-70b-instruct-v1:0": {
+    "modelAttributes": "Language modeling, Dialog systems, Code generation, Following instructions, Sentiment analysis with nuances in reasoning, Text classification with improved accuracy and nuance, Text summarization with accuracy and nuance",
+    "fullDescription": "Ideal for content creation, conversational AI, language understanding, R&D, and Enterprise applications.",
+    "supportedLanguages": "English",
+    "maxContextWindow": "8K",
+    "releaseDate": "2024-04-18T00:00:00Z",
+    "maxOutputTokens": 8192
+  },
+  "meta.llama3-8b-instruct-v1:0": {
+    "modelAttributes": "Text summarization, Text classification, Sentiment analysis",
+    "fullDescription": "Ideal for limited computational power and resources, edge devices, and faster training times.",
+    "supportedLanguages": "English",
+    "maxContextWindow": "8K",
+    "releaseDate": "2024-04-18T00:00:00Z",
+    "maxOutputTokens": 8192
+  },
+  "amazon.nova-premier-v1:0": {
+    "modelAttributes": "Agents, Chat optimized, Code generation, Complex reasoning analysis, Conversation, Math, Multilingual support, Question answering, RAG, Text generation, Text summarization, Translation, Text, Image, Video-to-text",
+    "fullDescription": "Amazon Nova Premier is Amazon's most capable model for complex tasks requiring deep reasoning and analysis.",
+    "supportedLanguages": "English and 200+ languages",
+    "releaseDate": "2025-02-06T00:00:00Z",
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 25600
+  },
+  "amazon.nova-lite-v1:0": {
+    "modelAttributes": "Agents, Chat optimized, Conversation, Math, Multilingual support, Question answering, RAG, Text generation, Text summarization, Translation, Text, Image, Video-to-text",
+    "fullDescription": "Amazon Nova Lite is a very low-cost multimodal model that is lightning fast for processing image, video, and text inputs.",
+    "supportedLanguages": "English and 200+ languages",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "maxContextWindow": "300K",
+    "maxOutputTokens": 5120
+  },
+  "amazon.nova-micro-v1:0": {
+    "modelAttributes": "Agents, Chat optimized, Conversation, Math, Multilingual support, Question answering, RAG, Text generation, Text summarization, Translation, Text-to-text",
+    "fullDescription": "Amazon Nova Micro is a text-only model that delivers the lowest latency responses at very low cost.",
+    "supportedLanguages": "English and 200+ languages",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 5120
+  },
+  "amazon.nova-canvas-v1:0": {
+    "modelAttributes": "Text-to-image, Image editing, Background removal, Image conditioning",
+    "fullDescription": "Amazon Nova Canvas is a state-of-the-art image generation model that creates professional-grade images from text and image inputs.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-12-03T00:00:00Z"
+  },
+  "amazon.nova-reel-v1:0": {
+    "modelAttributes": "Text-to-video, Image-to-video, Video generation",
+    "fullDescription": "Amazon Nova Reel is a state-of-the-art video generation model that creates high-quality video from text and image inputs.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-12-03T00:00:00Z"
+  },
+  "amazon.nova-reel-v1:1": {
+    "modelAttributes": "Text-to-video, Image-to-video, Video generation",
+    "fullDescription": "Amazon Nova Reel is a state-of-the-art video generation model that creates high-quality video from text and image inputs.",
+    "supportedLanguages": "English",
+    "releaseDate": "2025-01-15T00:00:00Z"
+  },
+  "amazon.nova-sonic-v1:0": {
+    "modelAttributes": "Speech-to-speech, Speech recognition, Text-to-speech, Conversational AI",
+    "fullDescription": "Amazon Nova Sonic is a speech-to-speech foundation model that delivers low-latency, lifelike voice conversations.",
+    "supportedLanguages": "English",
+    "releaseDate": "2025-03-12T00:00:00Z"
+  },
+  "amazon.rerank-v1:0": {
+    "modelAttributes": "Rerank",
+    "fullDescription": "Amazon Rerank 1.0 is a reranking model that improves search relevance by reordering results based on semantic similarity to the query.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-12-03T00:00:00Z"
+  },
+  "amazon.titan-embed-text-v2:0": {
+    "modelAttributes": "Output vector size = 1,024 (default), 512, or 256",
+    "fullDescription": "Amazon Titan Text Embeddings V2 is optimized for retrieval-augmented generation (RAG) use cases with flexible output vector sizes.",
+    "supportedLanguages": "English and 100+ languages",
+    "releaseDate": "2024-04-30T00:00:00Z",
+    "maxContextWindow": "8K"
+  },
+  "amazon.titan-embed-image-v1": {
+    "modelAttributes": "Output vector size = 1,024 (default), 384, or 256",
+    "fullDescription": "Amazon Titan Multimodal Embeddings G1 generates embeddings for text, images, or both for multimodal search and recommendations.",
+    "supportedLanguages": "English",
+    "releaseDate": "2023-11-28T00:00:00Z"
+  },
+  "amazon.titan-embed-image-v1:0": {
+    "modelAttributes": "Output vector size = 1,024 (default), 384, or 256",
+    "fullDescription": "Amazon Titan Multimodal Embeddings G1 generates embeddings for text, images, or both for multimodal search and recommendations.",
+    "supportedLanguages": "English",
+    "releaseDate": "2023-11-28T00:00:00Z"
+  },
+  "amazon.titan-embed-text-v1": {
+    "modelAttributes": "Output vector size = 1,536",
+    "fullDescription": "Amazon Titan Embeddings G1 - Text generates text embeddings for search, personalization, and clustering use cases.",
+    "supportedLanguages": "English",
+    "releaseDate": "2023-09-28T00:00:00Z",
+    "maxContextWindow": "8K"
+  },
+  "amazon.titan-embed-g1-text-02": {
+    "modelAttributes": "Output vector size = 1,536",
+    "fullDescription": "Amazon Titan Text Embeddings v2 generates text embeddings optimized for retrieval-augmented generation use cases.",
+    "supportedLanguages": "English and 100+ languages",
+    "releaseDate": "2024-04-30T00:00:00Z",
+    "maxContextWindow": "8K"
+  },
+  "amazon.titan-image-generator-v2:0": {
+    "modelAttributes": "Text-to-image, Image-to-image, Background removal, Image conditioning",
+    "fullDescription": "Amazon Titan Image Generator G1 v2 generates realistic images from text prompts and supports image editing capabilities.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-08-06T00:00:00Z"
+  },
+  "amazon.titan-tg1-large": {
+    "modelAttributes": "Text generation, Text summarization, Code generation",
+    "fullDescription": "Amazon Titan Text Large is a generative LLM for tasks such as summarization, text generation, classification, open-ended Q&A, and information extraction.",
+    "supportedLanguages": "English",
+    "releaseDate": "2023-09-28T00:00:00Z",
+    "maxContextWindow": "8K",
+    "maxOutputTokens": 8192
+  },
+  "cohere.command-r-v1:0": {
+    "modelAttributes": "Natural language processing, Text generation, Text summarization",
+    "fullDescription": "Command R is a scalable generative model targeting RAG and tool use to enable production-scale AI for enterprise.",
+    "supportedLanguages": "English and multiple other languages",
+    "releaseDate": "2024-04-30T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 4096
+  },
+  "cohere.command-r-plus-v1:0": {
+    "modelAttributes": "Natural language processing, Text generation, Text summarization",
+    "fullDescription": "Command R+ is an advanced, large language model optimized for complex RAG workflows and multi-step tool use.",
+    "supportedLanguages": "English and multiple other languages",
+    "releaseDate": "2024-04-30T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 4096
+  },
+  "cohere.embed-english-v3": {
+    "modelAttributes": "1024 dimensions",
+    "fullDescription": "Cohere Embed English is a text embedding model optimized for English-language semantic search, clustering, and classification.",
+    "supportedLanguages": "English",
+    "releaseDate": "2023-11-02T00:00:00Z",
+    "maxContextWindow": "512"
+  },
+  "cohere.embed-multilingual-v3": {
+    "modelAttributes": "1024 dimensions",
+    "fullDescription": "Cohere Embed Multilingual is a text embedding model supporting 100+ languages for semantic search, clustering, and classification.",
+    "supportedLanguages": "English and 100+ languages",
+    "releaseDate": "2023-11-02T00:00:00Z",
+    "maxContextWindow": "512"
+  },
+  "cohere.rerank-v3-5:0": {
+    "modelAttributes": "Rerank",
+    "fullDescription": "Cohere Rerank 3.5 is a reranking model that improves search quality by reordering results based on semantic relevance.",
+    "supportedLanguages": "English and multiple other languages",
+    "releaseDate": "2024-11-15T00:00:00Z",
+    "maxContextWindow": "4K"
+  },
+  "deepseek.r1-v1:0": {
+    "modelAttributes": "Text generation, Code generation",
+    "fullDescription": "DeepSeek-R1 is a reasoning model that achieves performance comparable to OpenAI-o1 across math, code, and reasoning benchmarks.",
+    "supportedLanguages": "English, Chinese",
+    "releaseDate": "2025-01-20T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "luma.ray-v2:0": {
+    "modelAttributes": "Image-to-video, Text-to-video, Video generation",
+    "fullDescription": "Luma Ray is a video generation model that creates high-quality videos from text and image inputs.",
+    "supportedLanguages": "English",
+    "releaseDate": "2025-01-07T00:00:00Z"
+  },
+  "mistral.mistral-7b-instruct-v0:2": {
+    "modelAttributes": "Classification, Text generation, Code generation",
+    "fullDescription": "Mistral 7B Instruct is a small yet powerful model for classification, text generation, and code generation tasks.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-03-27T00:00:00Z",
+    "maxContextWindow": "32K",
+    "maxOutputTokens": 4096
+  },
+  "mistral.mistral-large-2402-v1:0": {
+    "modelAttributes": "Complex reasoning analysis, Text generation, Code generation, RAG, Agents",
+    "fullDescription": "Mistral Large is a cutting-edge text generation model with top-tier reasoning capabilities for complex multilingual reasoning tasks.",
+    "supportedLanguages": "English, French, Spanish, German, Italian",
+    "releaseDate": "2024-03-27T00:00:00Z",
+    "maxContextWindow": "32K",
+    "maxOutputTokens": 4096
+  },
+  "mistral.mistral-large-2407-v1:0": {
+    "modelAttributes": "Complex reasoning analysis, Text generation, Code generation, RAG, Agents",
+    "fullDescription": "Mistral Large 2 (24.07) is a significantly upgraded model with 128k context window, improved reasoning, and multilingual support.",
+    "supportedLanguages": "English, French, Spanish, German, Italian, Portuguese, Chinese, Japanese, Korean, Arabic, Hindi",
+    "releaseDate": "2024-07-24T00:00:00Z",
+    "maxContextWindow": "32K",
+    "maxOutputTokens": 4096
+  },
+  "mistral.mistral-small-2402-v1:0": {
+    "modelAttributes": "Classification, Text generation, Code generation",
+    "fullDescription": "Mistral Small is optimized for low-latency workloads with strong performance on classification, text generation, and code tasks.",
+    "supportedLanguages": "English, French, Spanish, German, Italian",
+    "releaseDate": "2024-03-27T00:00:00Z",
+    "maxContextWindow": "32K",
+    "maxOutputTokens": 4096
+  },
+  "mistral.mixtral-8x7b-instruct-v0:1": {
+    "modelAttributes": "Complex reasoning analysis, Text generation, Code generation",
+    "fullDescription": "Mixtral 8x7B Instruct is a sparse mixture-of-experts model that handles complex reasoning, text generation, and code generation.",
+    "supportedLanguages": "English, French, Spanish, German, Italian",
+    "releaseDate": "2024-04-24T00:00:00Z",
+    "maxContextWindow": "32K",
+    "maxOutputTokens": 4096
+  },
+  "mistral.pixtral-large-2502-v1:0": {
+    "modelAttributes": "Complex reasoning analysis, Text generation, Image, Code generation, RAG, Agents",
+    "fullDescription": "Pixtral Large is a frontier-class multimodal model with 128k context window, supporting image understanding alongside text generation.",
+    "supportedLanguages": "English, French, Spanish, German, Italian, Portuguese, Chinese, Japanese, Korean, Arabic, Hindi",
+    "releaseDate": "2025-02-18T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "openai.gpt-oss-120b-1:0": {
+    "modelAttributes": "Hybrid reasoning, extended thinking, efficient code generation, enhanced text generation, agentic search, efficient research, computer use, tool use, task efficiency, steering and memory",
+    "fullDescription": "GPT OSS 120B is a large-scale open-source model from OpenAI with hybrid reasoning and extended thinking capabilities.",
+    "supportedLanguages": "English and multiple other languages",
+    "releaseDate": "2025-10-01T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "openai.gpt-oss-20b-1:0": {
+    "modelAttributes": "Hybrid reasoning, extended thinking, efficient code generation, enhanced text generation, agentic search, efficient research, computer use, tool use, task efficiency, steering and memory",
+    "fullDescription": "GPT OSS 20B is a compact open-source model from OpenAI with hybrid reasoning and extended thinking capabilities.",
+    "supportedLanguages": "English and multiple other languages",
+    "releaseDate": "2025-10-01T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "stability.sd3-5-large-v1:0": {
+    "modelAttributes": "Text-to-image, Image generation",
+    "fullDescription": "Stable Diffusion 3.5 Large uses multiple Diffusion Transformers for improved scene layout, visual aesthetics, and typography.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-10-22T00:00:00Z"
+  },
+  "stability.stable-image-core-v1:1": {
+    "modelAttributes": "Text-to-image, Image generation",
+    "fullDescription": "Stable Image Core 1.0 uses multiple Diffusion Transformers for improved scene layout, visual aesthetics, and typography.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-12-17T00:00:00Z"
+  },
+  "stability.stable-image-ultra-v1:1": {
+    "modelAttributes": "Text-to-image, Image generation",
+    "fullDescription": "Stable Image Ultra 1.0 uses multiple Diffusion Transformers for the highest quality image generation with improved scene layout and visual aesthetics.",
+    "supportedLanguages": "English",
+    "releaseDate": "2024-12-17T00:00:00Z"
+  },
+  "twelvelabs.marengo-embed-2-7-v1:0": {
+    "modelAttributes": "Video embedding, Multimodal",
+    "fullDescription": "Marengo Embed v2.7 is a multimodal embedding model for video understanding, search, and retrieval.",
+    "supportedLanguages": "English",
+    "releaseDate": "2025-06-01T00:00:00Z"
+  },
+  "twelvelabs.pegasus-1-2-v1:0": {
+    "modelAttributes": "Video-to-text, Multimodal, Video",
+    "fullDescription": "Pegasus v1.2 is a video-language model for video understanding, summarization, and question answering.",
+    "supportedLanguages": "English",
+    "releaseDate": "2025-06-01T00:00:00Z"
+  },
+  "writer.palmyra-x4-v1:0": {
+    "modelAttributes": "Text generation, Code generation, Rich text formatting",
+    "fullDescription": "Palmyra X4 is Writer's enterprise-grade language model optimized for business content generation and transformation.",
+    "supportedLanguages": "English",
+    "releaseDate": "2025-01-15T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "writer.palmyra-x5-v1:0": {
+    "modelAttributes": "Text generation, Code generation, Rich text formatting",
+    "fullDescription": "Palmyra X5 is Writer's most advanced enterprise language model with enhanced reasoning and content generation capabilities.",
+    "supportedLanguages": "English",
+    "releaseDate": "2025-04-01T00:00:00Z",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "ai21.jamba-1-5-large-v1:0": {
+    "modelAttributes": "Text generation, Text summarization, Question answering, RAG",
+    "fullDescription": "Jamba 1.5 Large is AI21's hybrid SSM-Transformer model with a 256K context window, optimized for enterprise workloads.",
+    "supportedLanguages": "English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, Hebrew",
+    "maxContextWindow": "256K",
+    "releaseDate": "2024-08-22T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "ai21.jamba-1-5-mini-v1:0": {
+    "modelAttributes": "Text generation, Text summarization, Question answering, RAG",
+    "fullDescription": "Jamba 1.5 Mini is AI21's compact hybrid SSM-Transformer model with a 256K context window, optimized for speed and efficiency.",
+    "supportedLanguages": "English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, Hebrew",
+    "maxContextWindow": "256K",
+    "releaseDate": "2024-08-22T00:00:00Z",
+    "maxOutputTokens": 4096
+  },
+  "amazon.nova-pro-v1:0": {
+    "maxContextWindow": "300K",
+    "maxOutputTokens": 5120
+  },
+  "amazon.nova-2-lite-v1:0": {
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 65536
+  },
+  "amazon.nova-2-sonic-v1:0": {
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 65536
+  },
+  "deepseek.v3-v1:0": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "deepseek.v3.2": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "google.gemma-3-4b-it": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "google.gemma-3-12b-it": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "google.gemma-3-27b-it": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "minimax.minimax-m2": {
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 8192
+  },
+  "minimax.minimax-m2.1": {
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 8192
+  },
+  "minimax.minimax-m2.5": {
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 8192
+  },
+  "mistral.mistral-large-3-675b-instruct": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 32768
+  },
+  "mistral.devstral-2-123b": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 32768
+  },
+  "mistral.magistral-small-2509": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 40960
+  },
+  "mistral.ministral-3-8b-instruct": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "mistral.ministral-3-3b-instruct": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "mistral.ministral-3-14b-instruct": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "moonshot.kimi-k2-thinking": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "moonshotai.kimi-k2.5": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "nvidia.nemotron-nano-3-30b": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192,
+    "shortDescription": "Nemotron Nano 3 30B is NVIDIA's 30-billion parameter model with strong reasoning and coding performance, optimized for deployment on NVIDIA GPUs.",
+    "fullDescription": "Nemotron Nano 3 30B is NVIDIA's 30-billion parameter model with strong reasoning and coding performance, optimized for deployment on NVIDIA GPUs. For more information about model development and performance, see the model/service card."
+  },
+  "nvidia.nemotron-super-3-120b": {
+    "maxContextWindow": "256K",
+    "maxOutputTokens": 32768
+  },
+  "nvidia.nemotron-nano-9b-v2": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "nvidia.nemotron-nano-12b-v2": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "openai.gpt-oss-safeguard-120b": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "openai.gpt-oss-safeguard-20b": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "qwen.qwen3-235b-a22b-2507-v1:0": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "qwen.qwen3-32b-v1:0": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "qwen.qwen3-coder-30b-a3b-v1:0": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "qwen.qwen3-coder-480b-a35b-v1:0": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "qwen.qwen3-coder-next": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 16384
+  },
+  "qwen.qwen3-next-80b-a3b": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "qwen.qwen3-vl-235b-a22b": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192
+  },
+  "zai.glm-4.7": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 4096
+  },
+  "zai.glm-4.7-flash": {
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 4096
+  },
+  "zai.glm-5": {
+    "maxContextWindow": "200K",
+    "maxOutputTokens": 131072
+  },
+  "anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "maxContextWindow": "200K",
+    "maxOutputTokens": 64000,
+    "maxOutputTokensDefault": 64000
+  },
+  "anthropic.claude-opus-4-1-20250805-v1:0": {
+    "maxContextWindow": "200K",
+    "maxOutputTokens": 64000,
+    "maxOutputTokensDefault": 1024
+  },
+  "anthropic.claude-opus-4-5-20251101-v1:0": {
+    "maxContextWindow": "200K",
+    "maxOutputTokens": 64000,
+    "maxOutputTokensDefault": 64000
+  },
+  "anthropic.claude-opus-4-6-v1": {
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 128000,
+    "maxOutputTokensDefault": 128000
+  },
+  "anthropic.claude-sonnet-4-20250514-v1:0": {
+    "maxContextWindow": "200K",
+    "maxOutputTokens": 65536,
+    "maxOutputTokensDefault": 8192
+  },
+  "anthropic.claude-sonnet-4-5-20250929-v1:0": {
+    "maxContextWindow": "200K",
+    "maxOutputTokens": 64000,
+    "maxOutputTokensDefault": 64000
+  },
+  "anthropic.claude-sonnet-4-6": {
+    "maxContextWindow": "1M",
+    "maxOutputTokens": 64000,
+    "maxOutputTokensDefault": 64000
+  },
+  "mistral.voxtral-mini-3b-2507": {
+    "maxContextWindow": "32K"
+  },
+  "mistral.voxtral-small-24b-2507": {
+    "maxContextWindow": "32K"
+  },
+  "writer.palmyra-vision-7b": {
+    "maxContextWindow": "4K",
+    "maxOutputTokens": 4096
+  }
+}
