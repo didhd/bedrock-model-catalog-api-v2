@@ -11,7 +11,7 @@ The official AWS SDK (`ListFoundationModels`) silently drops a significant porti
 ## Base URL
 
 ```
-https://d3q5s82trr046g.cloudfront.net/v1
+https://bedrock.sanghwa.people.aws.dev/v2
 ```
 
 All responses are `Content-Type: application/json` with Gzip/Brotli compression. No authentication required.
@@ -24,10 +24,10 @@ Data is refreshed daily at 06:00 UTC. Cache TTL is 24 hours.
 
 | Method | Path | Description |
 |--------|------|-------------|
-| `GET` | `/v1/metadata` | API status and last update time |
-| `GET` | `/v1/models` | Full model catalog |
-| `GET` | `/v1/models/{modelId}` | Individual model detail |
-| `GET` | `/v1/inference-profiles` | Cross-region inference profiles |
+| `GET` | `/v2/metadata` | API status and last update time |
+| `GET` | `/v2/models` | Full model catalog |
+| `GET` | `/v2/models/{modelId}` | Individual model detail |
+| `GET` | `/v2/inference-profiles` | Cross-region inference profiles |
 
 ---
 
@@ -48,12 +48,12 @@ All 148 models currently have `categories` populated. Fields that are not availa
 
 ---
 
-### GET /v1/metadata
+### GET /v2/metadata
 
 Returns API status and the last data collection timestamp.
 
 ```bash
-curl https://d3q5s82trr046g.cloudfront.net/v1/metadata
+curl https://bedrock.sanghwa.people.aws.dev/v2/metadata
 ```
 
 **Response**
@@ -78,12 +78,12 @@ curl https://d3q5s82trr046g.cloudfront.net/v1/metadata
 
 ---
 
-### GET /v1/models
+### GET /v2/models
 
 Returns the full model catalog.
 
 ```bash
-curl https://d3q5s82trr046g.cloudfront.net/v1/models
+curl https://bedrock.sanghwa.people.aws.dev/v2/models
 ```
 
 **Response**
@@ -106,12 +106,12 @@ curl https://d3q5s82trr046g.cloudfront.net/v1/models
 
 ---
 
-### GET /v1/models/{modelId}
+### GET /v2/models/{modelId}
 
 Returns detailed information for a single model.
 
 ```bash
-curl https://d3q5s82trr046g.cloudfront.net/v1/models/anthropic.claude-sonnet-4-6
+curl https://bedrock.sanghwa.people.aws.dev/v2/models/anthropic.claude-sonnet-4-6
 ```
 
 **Response:** A single `Model` object (see Model Schema below).
@@ -120,12 +120,12 @@ curl https://d3q5s82trr046g.cloudfront.net/v1/models/anthropic.claude-sonnet-4-6
 
 ---
 
-### GET /v1/inference-profiles
+### GET /v2/inference-profiles
 
 Returns cross-region inference profile data.
 
 ```bash
-curl https://d3q5s82trr046g.cloudfront.net/v1/inference-profiles
+curl https://bedrock.sanghwa.people.aws.dev/v2/inference-profiles
 ```
 
 **Response**
