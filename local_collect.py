@@ -17,6 +17,9 @@ from handler import (
     collect_region_data,
     fetch_pricing,
     parse_model,
+    fetch_mantle_models,
+    fetch_mantle_pricing,
+    merge_mantle_into_models,
     FALLBACK_METADATA,
 )
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -212,6 +215,22 @@ def main():
 
         print(f"\n  AWS docs merge: matched {docs_matched}/{len(docs_regions)} models, added {docs_added_regions} regions")
 
+    # ── Mantle merge (bedrock-mantle endpoint models) ──────────────
+    print("\n[2.5/3] Fetching Mantle (bedrock-mantle) models + pricing...")
+    mantle_ids, mantle_pricing = {}, {}
+    try:
+        mantle_ids = fetch_mantle_models()
+        print(f"  Got {len(mantle_ids)} Mantle model ids")
+    except Exception as e:
+        print(f"  Mantle models fetch failed (non-blocking): {e}")
+    try:
+        mantle_pricing = fetch_mantle_pricing()
+        print(f"  Got Mantle pricing for {len(mantle_pricing)} models")
+    except Exception as e:
+        print(f"  Mantle pricing fetch failed (non-blocking): {e}")
+    synth_ids = merge_mantle_into_models(all_models, mantle_ids, mantle_pricing)
+    models_list = sorted(all_models.values(), key=lambda m: m.get("modelId", ""))
+
     # Load fallback pricing for models not in AWS Pricing API
     import os as _os
     _fallback_pricing_path = _os.path.join(_os.path.dirname(__file__), "lambda", "fallback_pricing.json")
@@ -272,19 +291,25 @@ def main():
                 return pdata
         return None
 
+    def _has_useful_price(p):
+        if not p: return False
+        return any(p.get(k) is not None for k in [
+            'inputTokenPrice', 'outputTokenPrice', 'imagePrice',
+            'videoPrice', 'videoSecPrice', 'searchUnitPrice',
+        ])
+
     models_list_v2 = []
     matched_pricing = 0
     for model in models_list:
         model_v2 = model.copy()
         model_name = model_v2.get("modelName") or ""
+        # Synthesized Mantle-only models already carry mantle pricing.
+        if model["modelId"] in synth_ids:
+            if _has_useful_price(model_v2.get("pricing")):
+                matched_pricing += 1
+            models_list_v2.append(model_v2)
+            continue
         model_pricing = _match_pricing(model_name)
-        # Check if matched pricing has any useful data
-        def _has_useful_price(p):
-            if not p: return False
-            return any(p.get(k) is not None for k in [
-                'inputTokenPrice', 'outputTokenPrice', 'imagePrice',
-                'videoPrice', 'videoSecPrice', 'searchUnitPrice',
-            ])
         # Fallback: use fallback_pricing.json if API match has no useful price
         if (not _has_useful_price(model_pricing)) and model_name in _fallback_prices:
             fb = _fallback_prices[model_name]

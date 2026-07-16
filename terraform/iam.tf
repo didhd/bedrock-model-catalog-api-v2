@@ -50,7 +50,13 @@ resource "aws_iam_role_policy" "lambda_bedrock" {
         Action = [
           "bedrock:ListFoundationModels",
           "bedrock:GetFoundationModel",
-          "bedrock:ListInferenceProfiles"
+          "bedrock:ListInferenceProfiles",
+          # bedrock-mantle (OpenAI-compatible endpoint) uses a separate IAM
+          # namespace. Needed to list Mantle models via GET /v1/models.
+          "bedrock-mantle:ListModels",
+          "bedrock-mantle:GetModel",
+          "bedrock-mantle:ListProjects",
+          "bedrock-mantle:GetProject"
         ]
         Resource = "*"
       }

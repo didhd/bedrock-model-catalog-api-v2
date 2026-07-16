@@ -615,5 +615,202 @@
   "writer.palmyra-vision-7b": {
     "maxContextWindow": "4K",
     "maxOutputTokens": 4096
+  },
+  "openai.gpt-5.6-luna": {
+    "modelName": "GPT-5.6 Luna",
+    "providerName": "OpenAI",
+    "modelFamily": "GPT-5",
+    "maxContextWindow": "272K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "promptCaching": true,
+    "shortDescription": "OpenAI's fastest, lowest-cost GPT-5.6 model for high-volume tasks.",
+    "fullDescription": "GPT-5.6 Luna provides fast and affordable inference at OpenAI's lowest cost, built for high-volume tasks where speed and efficiency matter.",
+    "modelAttributes": "Text generation, Code generation, Reasoning, Agentic tool use"
+  },
+  "openai.gpt-5.6-terra": {
+    "modelName": "GPT-5.6 Terra",
+    "providerName": "OpenAI",
+    "modelFamily": "GPT-5",
+    "maxContextWindow": "272K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "promptCaching": true,
+    "shortDescription": "Higher-capability GPT-5.6 model balancing quality and cost.",
+    "fullDescription": "GPT-5.6 Terra is a higher-capability model in the GPT-5.6 family, offering stronger reasoning and quality for demanding tasks while remaining cost-effective.",
+    "modelAttributes": "Text generation, Code generation, Reasoning, Agentic tool use"
+  },
+  "openai.gpt-5.6-sol": {
+    "modelName": "GPT-5.6 Sol",
+    "providerName": "OpenAI",
+    "modelFamily": "GPT-5",
+    "maxContextWindow": "272K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "promptCaching": true,
+    "shortDescription": "GPT-5.6 model in OpenAI's latest generation.",
+    "fullDescription": "GPT-5.6 Sol is a model in OpenAI's GPT-5.6 family available on Amazon Bedrock via the OpenAI-compatible endpoint.",
+    "modelAttributes": "Text generation, Code generation, Reasoning, Agentic tool use"
+  },
+  "openai.gpt-5.4": {
+    "modelName": "GPT-5.4",
+    "providerName": "OpenAI",
+    "modelFamily": "GPT-5",
+    "maxContextWindow": "272K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "promptCaching": true,
+    "shortDescription": "OpenAI GPT-5.4 flagship reasoning model.",
+    "fullDescription": "GPT-5.4 is an OpenAI flagship model offering strong reasoning, coding, and agentic capabilities, available on Amazon Bedrock via the OpenAI-compatible endpoint.",
+    "modelAttributes": "Text generation, Code generation, Reasoning, Agentic tool use"
+  },
+  "openai.gpt-5.5": {
+    "modelName": "GPT-5.5",
+    "providerName": "OpenAI",
+    "modelFamily": "GPT-5",
+    "maxContextWindow": "272K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "promptCaching": true,
+    "shortDescription": "OpenAI GPT-5.5 flagship reasoning model.",
+    "fullDescription": "GPT-5.5 is an OpenAI flagship model offering strong reasoning, coding, and agentic capabilities, available on Amazon Bedrock via the OpenAI-compatible endpoint.",
+    "modelAttributes": "Text generation, Code generation, Reasoning, Agentic tool use"
+  },
+  "xai.grok-4.3": {
+    "modelName": "Grok 4.3",
+    "providerName": "xAI",
+    "modelFamily": "Grok",
+    "maxContextWindow": "1M",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "promptCaching": true,
+    "shortDescription": "xAI Grok 4.3 with a 1M-token context window.",
+    "fullDescription": "Grok 4.3 is xAI's frontier model featuring a 1M-token context window, strong reasoning, and multimodal understanding, available on Amazon Bedrock.",
+    "modelAttributes": "Text generation, Code generation, Reasoning, Long context"
+  },
+  "google.gemma-4-e2b": {
+    "modelName": "Gemma 4 E2B",
+    "providerName": "Google",
+    "modelFamily": "Gemma",
+    "maxContextWindow": "128K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE",
+      "AUDIO"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": false,
+    "shortDescription": "Google's compact, efficient Gemma 4 open model.",
+    "fullDescription": "Gemma 4 E2B is a compact open model in Google's Gemma 4 family, optimized for efficiency and edge/high-volume deployment.",
+    "modelAttributes": "Text generation, Code generation",
+    "releaseDate": "2026-04-02T00:00:00+00:00"
+  },
+  "google.gemma-4-31b": {
+    "modelName": "Gemma 4 31B",
+    "providerName": "Google",
+    "modelFamily": "Gemma",
+    "maxContextWindow": "256K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": false,
+    "shortDescription": "Google's largest Gemma 4 open model with 256K context.",
+    "fullDescription": "Gemma 4 31B is a large open model in Google's Gemma 4 family with a 256K-token context window and multimodal input support.",
+    "modelAttributes": "Text generation, Code generation, Multimodal",
+    "releaseDate": "2026-04-02T00:00:00+00:00"
+  },
+  "google.gemma-4-26b-a4b": {
+    "modelName": "Gemma 4 26B-A4B",
+    "providerName": "Google",
+    "modelFamily": "Gemma",
+    "maxContextWindow": "256K",
+    "inputModalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": false,
+    "shortDescription": "Google Gemma 4 mixture-of-experts open model (26B, 4B active).",
+    "fullDescription": "Gemma 4 26B-A4B is a mixture-of-experts open model in Google's Gemma 4 family (26B total / ~4B active parameters) with a 256K-token context window.",
+    "modelAttributes": "Text generation, Code generation, Multimodal",
+    "releaseDate": "2026-04-02T00:00:00+00:00"
+  },
+  "zai.glm-4.6": {
+    "modelName": "GLM 4.6",
+    "providerName": "Z.AI",
+    "modelFamily": "GLM",
+    "maxContextWindow": "200K",
+    "inputModalities": [
+      "TEXT"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "shortDescription": "Z.AI GLM 4.6 with strong reasoning and agentic coding.",
+    "fullDescription": "GLM 4.6 is a Z.AI model offering strong reasoning and agentic coding capabilities with a 200K-token context window.",
+    "modelAttributes": "Text generation, Code generation, Reasoning, Agentic tool use",
+    "releaseDate": "2025-09-30T00:00:00+00:00"
+  },
+  "deepseek.v3.1": {
+    "modelName": "DeepSeek-V3.1",
+    "providerName": "DeepSeek",
+    "modelFamily": "DeepSeek",
+    "maxContextWindow": "128K",
+    "maxOutputTokens": 8192,
+    "inputModalities": [
+      "TEXT"
+    ],
+    "outputModalities": [
+      "TEXT"
+    ],
+    "reasoning": true,
+    "shortDescription": "DeepSeek V3.1 hybrid reasoning model.",
+    "fullDescription": "DeepSeek-V3.1 is a hybrid model supporting both thinking and non-thinking modes, with strong reasoning, tool use, and coding performance.",
+    "modelAttributes": "Text generation, Code generation, Reasoning"
   }
 }

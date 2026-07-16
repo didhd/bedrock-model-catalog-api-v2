@@ -1,141 +1,527 @@
 {
   "_comment": "Comprehensive fallback pricing (per 1K tokens). Source: AmazonBedrockFoundationModels + AmazonBedrock APIs, 2026-04-08. Keys include BOTH API display names AND catalog modelName for direct matching.",
-
-  "Claude 3 Haiku": { "inputTokenPrice": 0.00025, "outputTokenPrice": 0.00125 },
-  "Claude 3 Sonnet": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Claude 3.5 Haiku": { "inputTokenPrice": 0.0008, "outputTokenPrice": 0.004 },
-  "Claude 3.5 Sonnet": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Claude 3.5 Sonnet v2": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Claude 3.7 Sonnet": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Claude Haiku 4.5": { "inputTokenPrice": 0.001, "outputTokenPrice": 0.005 },
-  "Claude Sonnet 4": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Claude Sonnet 4.5": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Claude Sonnet 4.6": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Claude Opus 4": { "inputTokenPrice": 0.015, "outputTokenPrice": 0.075 },
-  "Claude Opus 4.1": { "inputTokenPrice": 0.015, "outputTokenPrice": 0.075 },
-  "Claude Opus 4.5": { "inputTokenPrice": 0.005, "outputTokenPrice": 0.025 },
-  "Claude Opus 4.6": { "inputTokenPrice": 0.005, "outputTokenPrice": 0.025 },
-
-  "Jamba 1.5 Large": { "inputTokenPrice": 0.002, "outputTokenPrice": 0.008 },
-  "Jamba 1.5 Mini": { "inputTokenPrice": 0.0002, "outputTokenPrice": 0.0004 },
-
-  "Command R": { "inputTokenPrice": 0.0005, "outputTokenPrice": 0.0015 },
-  "Command R+": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Cohere Command R": { "inputTokenPrice": 0.0005, "outputTokenPrice": 0.0015 },
-  "Cohere Command R+": { "inputTokenPrice": 0.003, "outputTokenPrice": 0.015 },
-  "Embed English": { "inputTokenPrice": 0.0001, "outputTokenPrice": null },
-  "Embed Multilingual": { "inputTokenPrice": 0.0001, "outputTokenPrice": null },
-  "Embed v4": { "inputTokenPrice": 0.00012, "outputTokenPrice": null },
-  "Rerank 3.5": { "inputTokenPrice": null, "outputTokenPrice": null, "searchUnitPrice": 0.002 },
-
-  "DeepSeek-R1": { "inputTokenPrice": 0.00135, "outputTokenPrice": 0.0054 },
-  "DeepSeek-V3.1": { "inputTokenPrice": 0.00029, "outputTokenPrice": 0.00084 },
-  "DeepSeek V3.2": { "inputTokenPrice": 0.00031, "outputTokenPrice": 0.000925 },
-
-  "Gemma 3 12B IT": { "inputTokenPrice": 0.00005, "outputTokenPrice": 0.00015 },
-  "Gemma 3 27B PT": { "inputTokenPrice": 0.00012, "outputTokenPrice": 0.00019 },
-  "Gemma 3 4B IT": { "inputTokenPrice": 0.00002, "outputTokenPrice": 0.00004 },
-
-  "Llama 3 70B Instruct": { "inputTokenPrice": 0.00265, "outputTokenPrice": 0.0035 },
-  "Llama 3 8B Instruct": { "inputTokenPrice": 0.0003, "outputTokenPrice": 0.0006 },
-  "Llama 3.1 405B Instruct": { "inputTokenPrice": 0.0012, "outputTokenPrice": 0.0012 },
-  "Llama 3.1 70B Instruct": { "inputTokenPrice": 0.00036, "outputTokenPrice": 0.00036 },
-  "Llama 3.1 8B Instruct": { "inputTokenPrice": 0.00011, "outputTokenPrice": 0.00011 },
-  "Llama 3.2 11B Instruct": { "inputTokenPrice": 0.00016, "outputTokenPrice": 0.00016 },
-  "Llama 3.2 1B Instruct": { "inputTokenPrice": 0.0001, "outputTokenPrice": 0.0001 },
-  "Llama 3.2 3B Instruct": { "inputTokenPrice": 0.00015, "outputTokenPrice": 0.00015 },
-  "Llama 3.2 90B Instruct": { "inputTokenPrice": 0.00072, "outputTokenPrice": 0.00072 },
-  "Llama 3.3 70B Instruct": { "inputTokenPrice": 0.00036, "outputTokenPrice": 0.00036 },
-  "Llama 4 Maverick 17B Instruct": { "inputTokenPrice": 0.00012, "outputTokenPrice": 0.000485 },
-  "Llama 4 Scout 17B Instruct": { "inputTokenPrice": 0.000085, "outputTokenPrice": 0.00033 },
-
-  "MiniMax M2": { "inputTokenPrice": 0.00015, "outputTokenPrice": 0.0006 },
-  "MiniMax M2.1": { "inputTokenPrice": 0.00015, "outputTokenPrice": 0.0006 },
-  "MiniMax M2.5": { "inputTokenPrice": 0.00015, "outputTokenPrice": 0.0006 },
-
-  "Devstral 2 123B": { "inputTokenPrice": 0.0002, "outputTokenPrice": 0.001 },
-  "Magistral Small 2509": { "inputTokenPrice": 0.00025, "outputTokenPrice": 0.00075 },
-  "Ministral 14B 3.0": { "inputTokenPrice": 0.0001, "outputTokenPrice": 0.0001 },
-  "Ministral 3B": { "inputTokenPrice": 0.00005, "outputTokenPrice": 0.00005 },
-  "Ministral 3 8B": { "inputTokenPrice": 0.00007, "outputTokenPrice": 0.00007 },
-  "Mistral 7B Instruct": { "inputTokenPrice": 0.00015, "outputTokenPrice": 0.0002 },
-  "Mistral Large (24.02)": { "inputTokenPrice": 0.004, "outputTokenPrice": 0.012 },
-  "Mistral Large (24.07)": { "inputTokenPrice": 0.002, "outputTokenPrice": 0.006 },
-  "Mistral Large 3": { "inputTokenPrice": 0.00025, "outputTokenPrice": 0.00075 },
-  "Mistral Small (24.02)": { "inputTokenPrice": 0.0005, "outputTokenPrice": 0.0015 },
-  "Mixtral 8x7B Instruct": { "inputTokenPrice": 0.00045, "outputTokenPrice": 0.0007 },
-  "Pixtral Large (25.02)": { "inputTokenPrice": 0.002, "outputTokenPrice": 0.006 },
-  "Voxtral Mini 3B 2507": { "inputTokenPrice": 0.00002, "outputTokenPrice": 0.00002 },
-  "Voxtral Small 24B 2507": { "inputTokenPrice": 0.00005, "outputTokenPrice": 0.00015 },
-
-  "Kimi K2 Thinking": { "inputTokenPrice": 0.0003, "outputTokenPrice": 0.00125 },
-  "Kimi K2.5": { "inputTokenPrice": 0.0003, "outputTokenPrice": 0.0015 },
-
-  "NVIDIA Nemotron Nano 12B v2 VL BF16": { "inputTokenPrice": 0.0001, "outputTokenPrice": 0.0003 },
-  "NVIDIA Nemotron Nano 9B v2": { "inputTokenPrice": 0.00003, "outputTokenPrice": 0.00012 },
-  "Nemotron Nano 3 30B": { "inputTokenPrice": 0.00003, "outputTokenPrice": 0.00012 },
-  "NVIDIA Nemotron 3 Super 120B A12B": { "inputTokenPrice": 0.000075, "outputTokenPrice": 0.000325 },
-
-  "gpt-oss-120b": { "inputTokenPrice": 0.000075, "outputTokenPrice": 0.0003 },
-  "gpt-oss-20b": { "inputTokenPrice": 0.000035, "outputTokenPrice": 0.00015 },
-  "GPT OSS Safeguard 120B": { "inputTokenPrice": 0.00007, "outputTokenPrice": 0.0003 },
-  "GPT OSS Safeguard 20B": { "inputTokenPrice": 0.00003, "outputTokenPrice": 0.0001 },
-
-  "Qwen3 235B A22B 2507": { "inputTokenPrice": 0.00011, "outputTokenPrice": 0.00044 },
-  "Qwen3 32B (dense)": { "inputTokenPrice": 0.000075, "outputTokenPrice": 0.0003 },
-  "Qwen3-Coder-30B-A3B-Instruct": { "inputTokenPrice": 0.000075, "outputTokenPrice": 0.0003 },
-  "Qwen3 Coder 480B A35B Instruct": { "inputTokenPrice": 0.000225, "outputTokenPrice": 0.0009 },
-  "Qwen3 Coder Next": { "inputTokenPrice": 0.00025, "outputTokenPrice": 0.0006 },
-  "Qwen3 Next 80B A3B": { "inputTokenPrice": 0.00007, "outputTokenPrice": 0.0006 },
-  "Qwen3 VL 235B A22B": { "inputTokenPrice": 0.00026, "outputTokenPrice": 0.00133 },
-
-  "Writer Palmyra Vision 7B": { "inputTokenPrice": 0.000075, "outputTokenPrice": 0.0003 },
-  "Palmyra X4": { "inputTokenPrice": 0.0025, "outputTokenPrice": 0.01 },
-  "Palmyra X5": { "inputTokenPrice": 0.0006, "outputTokenPrice": 0.006 },
-
-  "GLM 4.7": { "inputTokenPrice": 0.0003, "outputTokenPrice": 0.0011 },
-  "GLM 4.7 Flash": { "inputTokenPrice": 0.000035, "outputTokenPrice": 0.0002 },
-  "GLM 5": { "inputTokenPrice": 0.0005, "outputTokenPrice": 0.0016 },
-
-  "Nova Lite": { "inputTokenPrice": 0.000015, "outputTokenPrice": 0.00012 },
-  "Nova Micro": { "inputTokenPrice": 0.00000875, "outputTokenPrice": 0.00007 },
-  "Nova Pro": { "inputTokenPrice": 0.0001, "outputTokenPrice": 0.0016 },
-  "Nova Premier": { "inputTokenPrice": 0.0003125, "outputTokenPrice": 0.00625 },
-  "Nova Sonic": { "inputTokenPrice": 0.00006, "outputTokenPrice": 0.00024 },
-  "Nova 2 Lite": { "inputTokenPrice": 0.0000375, "outputTokenPrice": 0.000125 },
-  "Nova 2 Pro Preview": { "inputTokenPrice": 0.000625, "outputTokenPrice": 0.005 },
-  "Nova 2 Sonic": { "inputTokenPrice": 0.00033, "outputTokenPrice": 0.00275 },
-  "Amazon Nova Multimodal Embeddings": { "inputTokenPrice": 0.00002, "outputTokenPrice": null },
-  "Rerank 1.0": { "inputTokenPrice": null, "outputTokenPrice": null, "searchUnitPrice": 0.002 },
-
-  "Nova Canvas": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Nova Reel": { "inputTokenPrice": null, "outputTokenPrice": null, "videoPrice": 0.08 },
-  "Ray v2": { "inputTokenPrice": null, "outputTokenPrice": null, "videoPrice": 0.032 },
-  "Stable Diffusion 3.5 Large": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Core 1.0": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Ultra 1.0": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.14 },
-  "Stable Image Conservative Upscale": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.02 },
-  "Stable Image Creative Upscale": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Fast Upscale": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.005 },
-  "Stable Image Control Sketch": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Control Structure": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Erase Object": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.02 },
-  "Stable Image Inpaint": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Remove Background": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.02 },
-  "Stable Image Search and Recolor": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Search and Replace": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Style Guide": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Style Transfer": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Stable Image Outpaint": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.04 },
-  "Titan Image Generator G1 v2": { "inputTokenPrice": null, "outputTokenPrice": null, "imagePrice": 0.008 },
-
-  "Titan Embeddings G1 - Text": { "inputTokenPrice": 0.0001, "outputTokenPrice": null },
-  "Titan Text Embeddings V2": { "inputTokenPrice": 0.00002, "outputTokenPrice": null },
-  "Titan Text Embeddings v2": { "inputTokenPrice": 0.00002, "outputTokenPrice": null },
-  "Titan Multimodal Embeddings G1": { "inputTokenPrice": 0.0008, "outputTokenPrice": null },
-  "Titan Text Large": { "inputTokenPrice": 0.0003, "outputTokenPrice": 0.0004 },
-
-  "Pegasus v1.2": { "inputTokenPrice": null, "outputTokenPrice": 0.0075 },
-  "Marengo Embed 3.0": { "inputTokenPrice": null, "outputTokenPrice": null, "videoSecPrice": 0.0007 },
-  "Marengo Embed v2.7": { "inputTokenPrice": null, "outputTokenPrice": null, "videoSecPrice": 0.0007 }
+  "Claude 3 Haiku": {
+    "inputTokenPrice": 0.00025,
+    "outputTokenPrice": 0.00125
+  },
+  "Claude 3 Sonnet": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Claude 3.5 Haiku": {
+    "inputTokenPrice": 0.0008,
+    "outputTokenPrice": 0.004
+  },
+  "Claude 3.5 Sonnet": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Claude 3.5 Sonnet v2": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Claude 3.7 Sonnet": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Claude Haiku 4.5": {
+    "inputTokenPrice": 0.001,
+    "outputTokenPrice": 0.005
+  },
+  "Claude Sonnet 4": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Claude Sonnet 4.5": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Claude Sonnet 4.6": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Claude Opus 4": {
+    "inputTokenPrice": 0.015,
+    "outputTokenPrice": 0.075
+  },
+  "Claude Opus 4.1": {
+    "inputTokenPrice": 0.015,
+    "outputTokenPrice": 0.075
+  },
+  "Claude Opus 4.5": {
+    "inputTokenPrice": 0.005,
+    "outputTokenPrice": 0.025
+  },
+  "Claude Opus 4.6": {
+    "inputTokenPrice": 0.005,
+    "outputTokenPrice": 0.025
+  },
+  "Jamba 1.5 Large": {
+    "inputTokenPrice": 0.002,
+    "outputTokenPrice": 0.008
+  },
+  "Jamba 1.5 Mini": {
+    "inputTokenPrice": 0.0002,
+    "outputTokenPrice": 0.0004
+  },
+  "Command R": {
+    "inputTokenPrice": 0.0005,
+    "outputTokenPrice": 0.0015
+  },
+  "Command R+": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Cohere Command R": {
+    "inputTokenPrice": 0.0005,
+    "outputTokenPrice": 0.0015
+  },
+  "Cohere Command R+": {
+    "inputTokenPrice": 0.003,
+    "outputTokenPrice": 0.015
+  },
+  "Embed English": {
+    "inputTokenPrice": 0.0001,
+    "outputTokenPrice": null
+  },
+  "Embed Multilingual": {
+    "inputTokenPrice": 0.0001,
+    "outputTokenPrice": null
+  },
+  "Embed v4": {
+    "inputTokenPrice": 0.00012,
+    "outputTokenPrice": null
+  },
+  "Rerank 3.5": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "searchUnitPrice": 0.002
+  },
+  "DeepSeek-R1": {
+    "inputTokenPrice": 0.00135,
+    "outputTokenPrice": 0.0054
+  },
+  "DeepSeek-V3.1": {
+    "inputTokenPrice": 0.00029,
+    "outputTokenPrice": 0.00084
+  },
+  "DeepSeek V3.2": {
+    "inputTokenPrice": 0.00031,
+    "outputTokenPrice": 0.000925
+  },
+  "Gemma 3 12B IT": {
+    "inputTokenPrice": 5e-05,
+    "outputTokenPrice": 0.00015
+  },
+  "Gemma 3 27B PT": {
+    "inputTokenPrice": 0.00012,
+    "outputTokenPrice": 0.00019
+  },
+  "Gemma 3 4B IT": {
+    "inputTokenPrice": 2e-05,
+    "outputTokenPrice": 4e-05
+  },
+  "Llama 3 70B Instruct": {
+    "inputTokenPrice": 0.00265,
+    "outputTokenPrice": 0.0035
+  },
+  "Llama 3 8B Instruct": {
+    "inputTokenPrice": 0.0003,
+    "outputTokenPrice": 0.0006
+  },
+  "Llama 3.1 405B Instruct": {
+    "inputTokenPrice": 0.0012,
+    "outputTokenPrice": 0.0012
+  },
+  "Llama 3.1 70B Instruct": {
+    "inputTokenPrice": 0.00036,
+    "outputTokenPrice": 0.00036
+  },
+  "Llama 3.1 8B Instruct": {
+    "inputTokenPrice": 0.00011,
+    "outputTokenPrice": 0.00011
+  },
+  "Llama 3.2 11B Instruct": {
+    "inputTokenPrice": 0.00016,
+    "outputTokenPrice": 0.00016
+  },
+  "Llama 3.2 1B Instruct": {
+    "inputTokenPrice": 0.0001,
+    "outputTokenPrice": 0.0001
+  },
+  "Llama 3.2 3B Instruct": {
+    "inputTokenPrice": 0.00015,
+    "outputTokenPrice": 0.00015
+  },
+  "Llama 3.2 90B Instruct": {
+    "inputTokenPrice": 0.00072,
+    "outputTokenPrice": 0.00072
+  },
+  "Llama 3.3 70B Instruct": {
+    "inputTokenPrice": 0.00036,
+    "outputTokenPrice": 0.00036
+  },
+  "Llama 4 Maverick 17B Instruct": {
+    "inputTokenPrice": 0.00012,
+    "outputTokenPrice": 0.000485
+  },
+  "Llama 4 Scout 17B Instruct": {
+    "inputTokenPrice": 8.5e-05,
+    "outputTokenPrice": 0.00033
+  },
+  "MiniMax M2": {
+    "inputTokenPrice": 0.00015,
+    "outputTokenPrice": 0.0006
+  },
+  "MiniMax M2.1": {
+    "inputTokenPrice": 0.00015,
+    "outputTokenPrice": 0.0006
+  },
+  "MiniMax M2.5": {
+    "inputTokenPrice": 0.00015,
+    "outputTokenPrice": 0.0006
+  },
+  "Devstral 2 123B": {
+    "inputTokenPrice": 0.0002,
+    "outputTokenPrice": 0.001
+  },
+  "Magistral Small 2509": {
+    "inputTokenPrice": 0.00025,
+    "outputTokenPrice": 0.00075
+  },
+  "Ministral 14B 3.0": {
+    "inputTokenPrice": 0.0001,
+    "outputTokenPrice": 0.0001
+  },
+  "Ministral 3B": {
+    "inputTokenPrice": 5e-05,
+    "outputTokenPrice": 5e-05
+  },
+  "Ministral 3 8B": {
+    "inputTokenPrice": 7e-05,
+    "outputTokenPrice": 7e-05
+  },
+  "Mistral 7B Instruct": {
+    "inputTokenPrice": 0.00015,
+    "outputTokenPrice": 0.0002
+  },
+  "Mistral Large (24.02)": {
+    "inputTokenPrice": 0.004,
+    "outputTokenPrice": 0.012
+  },
+  "Mistral Large (24.07)": {
+    "inputTokenPrice": 0.002,
+    "outputTokenPrice": 0.006
+  },
+  "Mistral Large 3": {
+    "inputTokenPrice": 0.00025,
+    "outputTokenPrice": 0.00075
+  },
+  "Mistral Small (24.02)": {
+    "inputTokenPrice": 0.0005,
+    "outputTokenPrice": 0.0015
+  },
+  "Mixtral 8x7B Instruct": {
+    "inputTokenPrice": 0.00045,
+    "outputTokenPrice": 0.0007
+  },
+  "Pixtral Large (25.02)": {
+    "inputTokenPrice": 0.002,
+    "outputTokenPrice": 0.006
+  },
+  "Voxtral Mini 3B 2507": {
+    "inputTokenPrice": 2e-05,
+    "outputTokenPrice": 2e-05
+  },
+  "Voxtral Small 24B 2507": {
+    "inputTokenPrice": 5e-05,
+    "outputTokenPrice": 0.00015
+  },
+  "Kimi K2 Thinking": {
+    "inputTokenPrice": 0.0003,
+    "outputTokenPrice": 0.00125
+  },
+  "Kimi K2.5": {
+    "inputTokenPrice": 0.0003,
+    "outputTokenPrice": 0.0015
+  },
+  "NVIDIA Nemotron Nano 12B v2 VL BF16": {
+    "inputTokenPrice": 0.0001,
+    "outputTokenPrice": 0.0003
+  },
+  "NVIDIA Nemotron Nano 9B v2": {
+    "inputTokenPrice": 3e-05,
+    "outputTokenPrice": 0.00012
+  },
+  "Nemotron Nano 3 30B": {
+    "inputTokenPrice": 3e-05,
+    "outputTokenPrice": 0.00012
+  },
+  "NVIDIA Nemotron 3 Super 120B A12B": {
+    "inputTokenPrice": 7.5e-05,
+    "outputTokenPrice": 0.000325
+  },
+  "gpt-oss-120b": {
+    "inputTokenPrice": 7.5e-05,
+    "outputTokenPrice": 0.0003
+  },
+  "gpt-oss-20b": {
+    "inputTokenPrice": 3.5e-05,
+    "outputTokenPrice": 0.00015
+  },
+  "GPT OSS Safeguard 120B": {
+    "inputTokenPrice": 7e-05,
+    "outputTokenPrice": 0.0003
+  },
+  "GPT OSS Safeguard 20B": {
+    "inputTokenPrice": 3e-05,
+    "outputTokenPrice": 0.0001
+  },
+  "Qwen3 235B A22B 2507": {
+    "inputTokenPrice": 0.00011,
+    "outputTokenPrice": 0.00044
+  },
+  "Qwen3 32B (dense)": {
+    "inputTokenPrice": 7.5e-05,
+    "outputTokenPrice": 0.0003
+  },
+  "Qwen3-Coder-30B-A3B-Instruct": {
+    "inputTokenPrice": 7.5e-05,
+    "outputTokenPrice": 0.0003
+  },
+  "Qwen3 Coder 480B A35B Instruct": {
+    "inputTokenPrice": 0.000225,
+    "outputTokenPrice": 0.0009
+  },
+  "Qwen3 Coder Next": {
+    "inputTokenPrice": 0.00025,
+    "outputTokenPrice": 0.0006
+  },
+  "Qwen3 Next 80B A3B": {
+    "inputTokenPrice": 7e-05,
+    "outputTokenPrice": 0.0006
+  },
+  "Qwen3 VL 235B A22B": {
+    "inputTokenPrice": 0.00026,
+    "outputTokenPrice": 0.00133
+  },
+  "Writer Palmyra Vision 7B": {
+    "inputTokenPrice": 7.5e-05,
+    "outputTokenPrice": 0.0003
+  },
+  "Palmyra X4": {
+    "inputTokenPrice": 0.0025,
+    "outputTokenPrice": 0.01
+  },
+  "Palmyra X5": {
+    "inputTokenPrice": 0.0006,
+    "outputTokenPrice": 0.006
+  },
+  "GLM 4.7": {
+    "inputTokenPrice": 0.0003,
+    "outputTokenPrice": 0.0011
+  },
+  "GLM 4.7 Flash": {
+    "inputTokenPrice": 3.5e-05,
+    "outputTokenPrice": 0.0002
+  },
+  "GLM 5": {
+    "inputTokenPrice": 0.0005,
+    "outputTokenPrice": 0.0016
+  },
+  "Nova Lite": {
+    "inputTokenPrice": 1.5e-05,
+    "outputTokenPrice": 0.00012
+  },
+  "Nova Micro": {
+    "inputTokenPrice": 8.75e-06,
+    "outputTokenPrice": 7e-05
+  },
+  "Nova Pro": {
+    "inputTokenPrice": 0.0001,
+    "outputTokenPrice": 0.0016
+  },
+  "Nova Premier": {
+    "inputTokenPrice": 0.0003125,
+    "outputTokenPrice": 0.00625
+  },
+  "Nova Sonic": {
+    "inputTokenPrice": 6e-05,
+    "outputTokenPrice": 0.00024
+  },
+  "Nova 2 Lite": {
+    "inputTokenPrice": 3.75e-05,
+    "outputTokenPrice": 0.000125
+  },
+  "Nova 2 Pro Preview": {
+    "inputTokenPrice": 0.000625,
+    "outputTokenPrice": 0.005
+  },
+  "Nova 2 Sonic": {
+    "inputTokenPrice": 0.00033,
+    "outputTokenPrice": 0.00275
+  },
+  "Amazon Nova Multimodal Embeddings": {
+    "inputTokenPrice": 2e-05,
+    "outputTokenPrice": null
+  },
+  "Rerank 1.0": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "searchUnitPrice": 0.002
+  },
+  "Nova Canvas": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Nova Reel": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "videoPrice": 0.08
+  },
+  "Ray v2": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "videoPrice": 0.032
+  },
+  "Stable Diffusion 3.5 Large": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Core 1.0": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Ultra 1.0": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.14
+  },
+  "Stable Image Conservative Upscale": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.02
+  },
+  "Stable Image Creative Upscale": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Fast Upscale": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.005
+  },
+  "Stable Image Control Sketch": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Control Structure": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Erase Object": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.02
+  },
+  "Stable Image Inpaint": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Remove Background": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.02
+  },
+  "Stable Image Search and Recolor": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Search and Replace": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Style Guide": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Style Transfer": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Stable Image Outpaint": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.04
+  },
+  "Titan Image Generator G1 v2": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "imagePrice": 0.008
+  },
+  "Titan Embeddings G1 - Text": {
+    "inputTokenPrice": 0.0001,
+    "outputTokenPrice": null
+  },
+  "Titan Text Embeddings V2": {
+    "inputTokenPrice": 2e-05,
+    "outputTokenPrice": null
+  },
+  "Titan Text Embeddings v2": {
+    "inputTokenPrice": 2e-05,
+    "outputTokenPrice": null
+  },
+  "Titan Multimodal Embeddings G1": {
+    "inputTokenPrice": 0.0008,
+    "outputTokenPrice": null
+  },
+  "Titan Text Large": {
+    "inputTokenPrice": 0.0003,
+    "outputTokenPrice": 0.0004
+  },
+  "Pegasus v1.2": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": 0.0075
+  },
+  "Marengo Embed 3.0": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "videoSecPrice": 0.0007
+  },
+  "Marengo Embed v2.7": {
+    "inputTokenPrice": null,
+    "outputTokenPrice": null,
+    "videoSecPrice": 0.0007
+  },
+  "GPT-5.6 Luna": {
+    "inputTokenPrice": 0.0011,
+    "outputTokenPrice": 0.0066,
+    "_source": "console"
+  },
+  "GPT-5.6 Terra": {
+    "inputTokenPrice": 0.00275,
+    "outputTokenPrice": 0.0165,
+    "_source": "console"
+  },
+  "GPT-5.4": {
+    "inputTokenPrice": 0.00275,
+    "outputTokenPrice": 0.0165,
+    "_source": "console"
+  },
+  "GLM 4.6": {
+    "inputTokenPrice": 0.0006,
+    "outputTokenPrice": 0.0022,
+    "_source": "console"
+  }
 }
