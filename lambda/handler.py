@@ -261,7 +261,7 @@ def _parse_model_card(md: str) -> dict:
         return (icon.group(1) if icon else None), (label or None)
 
     tbl = re.search(r"\|\s*\*\*Input Modalities\*\*.*?\n\|[-\s|]+\n(.*?)(?:\n\n|\n#)", md, re.DOTALL)
-    inp, outp, eps = [], [], {}
+    inp, outp, apis, eps = [], [], [], {}
     if tbl:
         for row in tbl.group(1).split("\n"):
             if not row.strip().startswith("|"):
@@ -274,6 +274,10 @@ def _parse_model_card(md: str) -> dict:
                     inp.append(ilabel.upper())
                 if oy == "yes" and olabel:
                     outp.append(olabel.upper())
+            if len(cells) >= 3:
+                ay, alabel = _cell(cells[2])
+                if ay == "yes" and alabel:
+                    apis.append(alabel)
             if len(cells) >= 4:
                 ey, elabel = _cell(cells[3])
                 if elabel in ("bedrock-runtime", "bedrock-mantle"):
@@ -288,6 +292,15 @@ def _parse_model_card(md: str) -> dict:
         out["outputModalities"] = _order(outp)
     if eps:
         out["endpoints"] = eps
+    # APIs that run on the bedrock-mantle endpoint (exclude runtime-only Invoke/Converse).
+    mantle_apis = [a for a in apis if a in ("Responses", "Chat Completions", "Messages")]
+    if mantle_apis:
+        out["mantleApis"] = mantle_apis
+
+    # bedrock-mantle base URL path (e.g. .../openai/v1, .../anthropic/v1/messages, .../v1)
+    bu = re.search(r"(https://bedrock-mantle\.\{region\}\.api\.aws/[^\s|`]+)", md)
+    if bu:
+        out["mantleBaseUrl"] = bu.group(1)
 
     # Service tiers (Standard | Priority | Flex | Reserved)
     st = re.search(r"## Service Tiers.*?\|\s*\*\*Standard\*\*.*?\n\|[-\s|]+\n\|(.*?)\|\s*\n", md, re.DOTALL)
@@ -667,7 +680,9 @@ def synthesize_mantle_model(model_id: str, regions: list[str], mantle_price: dic
                      "customizations": [], "inferenceTypes": ["ON_DEMAND"]},
         "crossRegionInference": {"supported": False, "profiles": []},
         "availableRegions": sorted(regions),
-        "mantle": {"supported": True, "regions": sorted(regions)},
+        "mantle": {"supported": True, "regions": sorted(regions),
+                   "apis": card.get("mantleApis") or [],
+                   "baseUrl": card.get("mantleBaseUrl")},
         "pricing": None,
     }
 
@@ -748,7 +763,9 @@ def merge_mantle_into_models(all_models: dict[str, dict],
         existing = norm_to_model.get(norm)
         if existing is not None:
             # runtime + mantle coexist → keep classic (runtime) data, fill gaps from card
-            existing["mantle"] = {"supported": True, "regions": sorted(regs)}
+            existing["mantle"] = {"supported": True, "regions": sorted(regs),
+                                  "apis": card.get("mantleApis") or [],
+                                  "baseUrl": card.get("mantleBaseUrl")}
             existing["availableRegions"] = sorted(set(existing.get("availableRegions", [])) | set(regs))
             _enrich_from_card(existing, card)
             mp = _match_mantle_price(mid)
@@ -863,7 +880,7 @@ def parse_model(raw_model: dict, inference_profiles: list[dict] | None = None) -
                      "customizations": raw_model.get("customizationsSupported", []),
                      "inferenceTypes": raw_model.get("inferenceTypesSupported", [])},
         "crossRegionInference": cr,
-        "mantle": {"supported": False, "regions": []},
+        "mantle": {"supported": False, "regions": [], "apis": [], "baseUrl": None},
         "pricing": None,
     }
 
